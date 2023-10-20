@@ -8,7 +8,6 @@ const Slugpage = ({ params }: { params: { slug: string } }) => {
     const product = useAppSelector((state) => state.products)
     const slug = product.filter((val) => val.slug == params.slug);
 
-console.log(slug[0])
     return (
         <div className="container px-5 py-24 mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -86,7 +85,7 @@ console.log(slug[0])
                                 <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
                                 {slug[0].size.map((item,i)=>
                                 
-                                <option>{item}</option>
+                                <option key={i}>{item}</option>
 
                                 )}
                                     

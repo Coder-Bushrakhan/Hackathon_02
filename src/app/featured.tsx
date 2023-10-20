@@ -21,13 +21,13 @@ export default class SimpleSlider extends Component {
    <h1 className="mt-10 mb-10 text-center text-4xl font-sans font-bold underline">Our Promotions</h1>
         <Slider {...settings}>
           
-          <div >
-          <img src="promo1.webp"/>
-           <img src = "/promow1.webp"/>
+          <div className="grid row-span-3">
+          <Image src="/promo1.webp" height={1400} width={1400} alt="promo"/>
+           <Image src = "/promow1.webp"height={1400} width={1400} alt="promo"/>
           </div>
           <div >
-           <img src = "/promom2.webp"/>
-           <img src="/promow1.webp"/>
+           <Image src = "/promom2.webp" height={1400} width={1400} alt="promo"/>
+           <Image src="/promow1.webp" height={1400} width={1400} alt="promo"/>
 
           </div>
           
