@@ -6,7 +6,6 @@ const Slugcomponent = ({
     image,
 }: string | string[] | StaticImageData | any) => {
     const [path, setpath] = useState("");
-    console.log(image)
     return (
         <div className="container">
             <div className="mx-10">

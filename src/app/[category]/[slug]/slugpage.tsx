@@ -12,7 +12,7 @@ const Slugpage = ({ params }: { params: { slug: string } }) => {
         <div className="container px-5 py-24 mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                <Slugcomponent image={slug[0].image} />
+                <Slugcomponent/>
                 <div className="mt-2 p-20">
                     <h2 className="text-sm title-font text-gray-500 tracking-widest">
 
