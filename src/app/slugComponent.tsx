@@ -1,24 +1,38 @@
-"use client"
-import Image, { StaticImageData } from "next/image"
-import { useState } from "react"
+import Image from "next/image";
+import { useState } from "react";
 
-const Slugcomponent = ({
-    image,
-}: string | string[] | StaticImageData | any) => {
-    const [path, setpath] = useState("");
-    return (
-        <div className="container">
-            <div className="mx-10">
-                <Image src={path ? path : image} alt=" ecommerce" height={350} width={550} />
-            </div>
-            <div className="flex items-center justify-evenly mx-auto mt-4">
+const Slugcomponent = () => {
+ const [path, setpath] = useState("/shirt1.webp");
 
-                        {
-                            image && 
-                            <Image src={image} alt="shirt1.0" height={60} width={60}/>
-                        }
-            </div>
-        </div>
-    );
+ const handleClick = (src:any) => {
+    setpath(src);
+ };
+
+ return (
+    <div className="container">
+      <div className="mx-10">
+        {/* main image */}
+        <Image src={path} alt=" ecommerce" height={350} width={550} />
+      </div>
+      {/* side images */}
+      <div className="flex items-center justify-evenly mx-auto mt-4">
+        <Image
+          src="/shirt1.1.webp"
+          alt=" ecommerce"
+          height={60}
+          width={60}
+          onClick={() => handleClick("/shirt1.1.webp")}
+        />
+        <Image
+          src="/shirt1.2.webp"
+          alt=" ecommerce"
+          height={60}
+          width={60}
+          onClick={() => handleClick("/shirt1.2.webp")}
+        />
+      </div>
+    </div>
+ );
 };
+
 export default Slugcomponent;
