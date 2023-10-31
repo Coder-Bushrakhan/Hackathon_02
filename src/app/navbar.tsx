@@ -29,8 +29,8 @@ export default function Nav() {
 
           <li className="hidden lg:block"> <Link href={"men"} className=" mr-5 hover:text-gray-900">Men</Link></li>
           <li className="hidden lg:block"> <Link href={"women"} className="mr-5 hover:text-gray-900">Women</Link></li>
-          <li className="hidden lg:block"> <Link href="./ " className="mr-5 hover:text-gray-900">Kids</Link></li>
-          <li className="hidden lg:block"> <Link href={"./"} className="mr-5 hover:text-gray-900">All products</Link></li>
+           <li className="hidden lg:block"> <Link href={"contact"} className="mr-5 hover:text-gray-900">Kids</Link></li>
+          <li className="hidden lg:block"> <Link href={"about"} className="mr-5 hover:text-gray-900">About</Link></li> 
           </ul>
           <div className="relative mx-auto hidden lg:block">
             <Input
@@ -50,10 +50,10 @@ export default function Nav() {
   <SheetContent>
   <ul className=" flex-row space-y-10">
 
-<li> <Link href="./" className="mr-5 mt-5 hover:text-black">Men</Link></li>
-<li> <Link href="./" className="mr-5 mt-5 hover:text-black">Women</Link></li>
-<li> <Link href="./" className="mr-5 mt-5 hover:text-black">Kids</Link></li>
-<li> <Link href="./" className="mr-5 mt-5 hover:text-black">All products</Link></li>
+<li> <Link href={"men"} className="mr-5 mt-5 hover:text-black">Men</Link></li>
+<li> <Link href={"women"} className="mr-5 mt-5 hover:text-black">Women</Link></li>
+<li> <Link href={"contact"} className="mr-5 mt-5 hover:text-black">About</Link></li>
+<li> <Link href={"about"} className="mr-5 mt-5 hover:text-black">All products</Link></li>
 </ul>
     <SheetHeader>
       <SheetTitle></SheetTitle>
