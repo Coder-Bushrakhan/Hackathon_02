@@ -15,7 +15,7 @@ const Shop = ({ params }: { params: { type: string } }) => {
 
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 mx-16">
+      <div className="container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 mx-auto">
         {productlist.map((item: any, i) => (
           <ProductCard key={i} src={item.image} alt={item.title} title={item.title} description={item.description} price={item.price} category={item.category} slug={item.slug} />
 
