@@ -111,9 +111,12 @@ const Slugpage = ({ params }: { params: { slug: string } }) => {
 
 
                             </div>
+                            </div>
+
+</div>
 
                             {/* icons starts here */}
-
+<div className="flex">
                             <Button variant="outline" className="ml-5">
 
                                 <Plus />
@@ -123,30 +126,32 @@ const Slugpage = ({ params }: { params: { slug: string } }) => {
                             <Button variant="outline" className=" ml-5">
                                 <Minus />
                             </Button>
-                        </div>
-
-                    </div>
-
+     
+                     
+</div>
 
                     {/* add to acrd and buy now */}
-                    <div className="flex justify-evenly">
-                        <span className="title-font font-medium text-2xl text-gray-900">
+     
+                        {/* <span className="title-font font-medium text-2xl text-gray-900">
                             {/* {slug[0].price} */}
-                        </span>
-                        <Button variant="outline" className="">
+                        {/* </span>  */}
+                        <div className="grid mt-4">
+                        
+                        <Button variant="outline" className=" mb-3">
                             <Heart />
-                            Add To Card
-
+                        <p>    Add To Card
+     </p>
                         </Button>
                         <Button variant="outline" className="">
                             <ShoppingCart />
-                            Buy Now
-
+                          <p>  Buy Now
+                          </p>
                         </Button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
     )
 }
 export default Slugpage;
