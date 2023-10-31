@@ -15,7 +15,7 @@ export default function ProductCard({src , title ,description , price,category,s
 {
     return(
         
-<div className="flex justify-center border-4 w-64 mx-10   mt-10 text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-700 ... ">
+<div className="flex justify-center border-4 w-64  mt-10 text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-700 ... ">
 
 <Link href={`/${category}/${slug} `}>
 <Image src={src} height="250" alt ="shirt1"width="250"/>
